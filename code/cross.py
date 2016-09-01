@@ -15,7 +15,7 @@ import utils
 #input: training data and corresponding labels
 #output: accuracy, auc
 def get_acc_auc_kfold(X,Y,k=5):
-	#TODO:First get the train indices and test indices for each iteration
+	#First get the train indices and test indices for each iteration
 	#Then train the classifier accordingly
 	#Report the mean accuracy and mean auc of all the folds
 
@@ -42,7 +42,7 @@ def get_acc_auc_kfold(X,Y,k=5):
 #input: training data and corresponding labels
 #output: accuracy, auc
 def get_acc_auc_randomisedCV(X,Y,iterNo=5,test_percent=0.2):
-	#TODO: First get the train indices and test indices for each iteration
+	#First get the train indices and test indices for each iteration
 	#Then train the classifier accordingly
 	#Report the mean accuracy and mean auc of all the iterations
 	rs=cross_validation.ShuffleSplit(len(Y),n_iter=iterNo,test_size=test_percent)
