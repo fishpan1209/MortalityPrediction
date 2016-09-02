@@ -16,7 +16,7 @@ import utils
 #input: X_train, Y_train and X_test
 #output: Y_pred
 def logistic_regression_pred(X_train, Y_train, X_test):
-	#TODO: train a logistic regression classifier using X_train and Y_train. Use this to predict labels of X_test
+	#train a logistic regression classifier using X_train and Y_train. Use this to predict labels of X_test
 	#use default params for the classifier	
 	clf=LogisticRegression(random_state =545510477)
 	clf.fit(X_train, Y_train)
@@ -47,7 +47,7 @@ def bagging(X_train, Y_train, X_test):
 	return pred"""
 
 def svm_pred(X_train, Y_train, X_test):
-	#TODO:train a SVM classifier using X_train and Y_train. Use this to predict labels of X_test
+	#train a SVM classifier using X_train and Y_train. Use this to predict labels of X_test
 	#use default params for the classifir
 	print X_train.shape
 	clf=LinearSVC(random_state =545510477)
@@ -61,7 +61,7 @@ def svm_pred(X_train, Y_train, X_test):
 #input: X_train, Y_train and X_test
 #output: Y_pred
 def decisionTree_pred(X_train, Y_train, X_test):
-	#TODO:train a logistic regression classifier using X_train and Y_train. Use this to predict labels of X_test
+	#train a logistic regression classifier using X_train and Y_train. Use this to predict labels of X_test
 	#IMPORTANT: use max_depth as 5. Else your test cases might fail.
 
 	clf=DecisionTreeClassifier(max_depth=5,random_state=545510477)
@@ -75,7 +75,7 @@ def decisionTree_pred(X_train, Y_train, X_test):
 #input: Y_pred,Y_true
 #output: accuracy, auc, precision, recall, f1-score
 def classification_metrics(Y_pred, Y_true):
-	#TODO: Calculate the above mentioned metrics
+	#Calculate the above mentioned metrics
 	#NOTE: It is important to provide the output in the same order
 	acc=accuracy_score(Y_true, Y_pred)
 	
