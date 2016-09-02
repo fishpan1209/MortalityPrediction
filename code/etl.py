@@ -12,7 +12,7 @@ import collections
 def read_csv(filepath):
     
     '''
-    TODO: This function needs to be completed.
+    
     Read the events.csv, mortality_events.csv and event_feature_map.csv files into events, mortality and feature_map.
     
     Return events, mortality and feature_map
@@ -34,11 +34,7 @@ def read_csv(filepath):
 def calculate_index_date(events, mortality, deliverables_path):
     
     '''
-    TODO: This function needs to be completed.
-
-    Refer to instructions in Q3 a
-
-    Suggested steps:
+    
     1. Create list of patients alive ( mortality_events.csv only contains information about patients deceased)
     2. Split events into two groups based on whether the patient is alive or deceased
     3. Calculate index date for each patient
@@ -97,11 +93,7 @@ def calculate_index_date(events, mortality, deliverables_path):
 def filter_events(events, indx_date, deliverables_path):
     
     '''
-    TODO: This function needs to be completed.
-
-    Refer to instructions in Q3 a
-
-    Suggested steps:
+    
     1. Join indx_date with events on patient_id
     2. Filter events occuring in the observation window(IndexDate-2000 to IndexDate)
     
@@ -143,11 +135,7 @@ def filter_events(events, indx_date, deliverables_path):
 def aggregate_events(filtered_events_df, mortality_df,feature_map_df, deliverables_path):
     
     '''
-    TODO: This function needs to be completed.
-
-    Refer to instructions in Q3 a
-
-    Suggested steps:
+    
     1. Replace event_id's with index available in event_feature_map.csv
     2. Remove events with n/a values
     3. Aggregate events using sum to calculate feature value 
@@ -233,9 +221,7 @@ def create_features(events, mortality, feature_map):
 
 def save_svmlight(patient_features, mortality, op_file, op_deliverable):
     
-    '''
-    TODO: This function needs to be completed
-    Create two files:
+   '''
     1. op_file - which saves the features in svmlight format. (See instructions in Q3d for detailed explanation)
     2. op_deliverable - which saves the features in following format:
        patient_id1 label feature_id:feature_value feature_id:feature_value feature_id:feature_value ...
