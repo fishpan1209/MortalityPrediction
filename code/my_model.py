@@ -34,7 +34,7 @@ input:
 output: X_train,Y_train,X_test
 '''
 def my_features():
-	#TODO: complete this
+	#complete this
 	X_train, Y_train = utils.get_data_from_svmlight("../deliverables/features_svmlight.train")
 	test_path = '../data/test/'
 	
@@ -80,15 +80,13 @@ def my_features():
 
 
 '''
-You can use any model you wish.
+
 
 input: X_train, Y_train, X_test
 output: Y_pred
 '''
 def my_classifier_predictions(X_train,Y_train,X_test):
-	#TODO: complete this
 	
-
 	
 	lr = linear_model.LogisticRegression(C=10,random_state =545510477)
 	
