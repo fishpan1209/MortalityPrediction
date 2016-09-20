@@ -142,11 +142,8 @@ def aggregate_events(filtered_events_df, mortality_df,feature_map_df, deliverabl
     4. Normalize the values obtained above using min-max normalization
     
     
-    IMPORTANT:
     Save aggregated_events to a csv file in the deliverables folder named as etl_aggregated_events.csv. 
-    Use the global variable deliverables_path while specifying the filepath. 
     Each row is of the form patient_id, event_id, value.
-    The csv file should have a header .
     For example if you are using Pandas, you could write: 
         aggregated_events.to_csv(deliverables_path + 'etl_aggregated_events.csv', columns=['patient_id', 'feature_id', 'feature_value'], index=False)
 
@@ -195,7 +192,6 @@ def create_features(events, mortality, feature_map):
     aggregated_events = aggregate_events(filtered_events, mortality, feature_map, deliverables_path)
 
     '''
-    TODO: Complete the code below by creating two dictionaries - 
     1. patient_features :  Key - patient_id and value is array of tuples(feature_id, feature_value)
     2. mortality : Key - patient_id and value is mortality label
     '''
